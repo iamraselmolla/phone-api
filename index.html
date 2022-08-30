@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body class="py-5">
+    <header></header>
+    <main>
+      
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Search Your Phone</h2>
+                    <form class="mb-5"><input type="text"  class="form-control" id="search-value" placeholder="Search Phones">
+                        <button id="btn-search" type="button" class="btn btn-primary w-100 mt-1">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-3" id="phone-container">
+                
+            </div>
+            <div id="message" class="row d-none">
+                <h2 class="text-warning">
+                    No Phone found. Please search a new phone
+                </h2>
+            </div>
+        </div>
+        <section class="d-none text-center mt-5" id="loader">
+            <div class="container">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+            </div>
+        </section>
+        <section class="d-none mt-5" id="show-more">
+            <div class="container">
+                <div class="row">
+                    <button id="btn-show-more" class="btn btn-primary">  Show ALL PHONES</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
